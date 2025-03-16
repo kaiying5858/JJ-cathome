@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Nest Home - Create Perfect Resting Space for Your Cat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <p data-i18n="announcement">🎉 Limited Time | Free Shipping on All Orders</p>
+    </div>
+
+    <!-- Countdown Timer -->
+    <div class="countdown-bar">
+        <div class="countdown-content">
+            <div class="countdown-text">
+                <span class="highlight" data-i18n="countdown.title">Spring Special</span>
+                <span data-i18n="countdown.offer">Limited Time Offer</span>
+            </div>
+            <div class="countdown-timer">
+                <div class="timer-item">
+                    <span class="timer-number" id="countdown-days">00</span>
+                    <span class="timer-label" data-i18n="countdown.days">Days</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-number" id="countdown-hours">00</span>
+                    <span class="timer-label" data-i18n="countdown.hours">Hours</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-number" id="countdown-minutes">00</span>
+                    <span class="timer-label" data-i18n="countdown.minutes">Min</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-number" id="countdown-seconds">00</span>
+                    <span class="timer-label" data-i18n="countdown.seconds">Sec</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="/">
+                    <svg width="150" height="40" viewBox="0 0 150 40">
+                        <text x="0" y="30" font-family="'Noto Sans SC'" font-size="24" fill="#333">Cat Nest Home</text>
+                        <path d="M140,15 Q145,5 150,15" stroke="#FF6B6B" fill="none" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="shop.html" data-i18n="nav.buyCatBeds">Buy Cat Beds</a></li>
+                <li><a href="privacy.html" data-i18n="nav.privacy">Privacy Policy</a></li>
+                <li><a href="about.html" data-i18n="nav.aboutUs">About Us</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                <li class="language-switch">
+                    <button type="button" onclick="i18n.switchLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero.title">Create the Perfect Resting Space for Your Cat</h1>
+        </div>
+    </section>
+
+    <!-- Monologue Section -->
+    <section class="monologue">
+        <div class="monologue-content">
+            <h2 data-i18n="monologue.title">Create the Perfect<br>Resting Space for Your Cat</h2>
+            <div class="monologue-grid">
+                <div class="monologue-item">
+                    <div class="monologue-icon" data-i18n="monologue.items.0.icon">🏠</div>
+                    <p data-i18n="monologue.items.0.text">Cats naturally desire their own territory. A dedicated cat bed provides them with security and a sense of belonging</p>
+                </div>
+                <div class="monologue-item">
+                    <div class="monologue-icon" data-i18n="monologue.items.1.icon">💤</div>
+                    <p data-i18n="monologue.items.1.text">Cats need 16-20 hours of sleep daily. A comfortable bed ensures quality rest</p>
+                </div>
+                <div class="monologue-item">
+                    <div class="monologue-icon" data-i18n="monologue.items.2.icon">🌡️</div>
+                    <p data-i18n="monologue.items.2.text">Our carefully designed cat beds maintain warmth in winter and stay cool in summer</p>
+                </div>
+                <div class="monologue-item">
+                    <div class="monologue-icon" data-i18n="monologue.items.3.icon">🏃</div>
+                    <p data-i18n="monologue.items.3.text">A dedicated bed helps establish good routines and prevents cats from occupying unsuitable resting areas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products" id="featured-products">
+        <h2 data-i18n="products.title">Featured Cat Beds</h2>
+        <div class="product-collection-card">
+            <div class="product-collection-grid">
+                <!-- Product 1: Feandrea Cat Castle -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/feandrea-cat-tree-66-1-inch-large-cat-tower-with-13-scratching-posts-2-perches-2-caves-basket-hammock-pompoms-multi-level-plush-cat-condo-for-indoor-cats-g-601099592240663.html">
+                            <img src="images/1.webp" alt="Feandrea Cat Castle">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product1.name">Feandrea Cat Castle</h4>
+                            <p class="recommendation" data-i18n="products.details.product1.description">Let your cat enjoy a 'five-star climbing life'!</p>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$44.99</span>
+                            <span class="discount-price">$34.44</span>
+                            <a href="https://www.temu.com/feandrea-cat-tree-66-1-inch-large-cat-tower-with-13-scratching-posts-2-perches-2-caves-basket-hammock-pompoms-multi-level-plush-cat-condo-for-indoor-cats-g-601099592240663.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Summer Cloud AC Room -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/cat-bed-pet-hammock-bed-cat-sleeping-bed-breathable-cooling-cot-sofa-pet-hammock-bed-g-601099519061591.html">
+                            <img src="images/详细/2.webp" alt="Summer Cloud AC Room" class="main-image" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product2.name">Summer Cloud AC Room</h4>
+                            <p class="recommendation" data-i18n="products.details.product2.description">Cat's 'summer resort'</p>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$10.99</span>
+                            <span class="discount-price">$8.09</span>
+                            <a href="https://www.temu.com/cat-bed-pet-hammock-bed-cat-sleeping-bed-breathable-cooling-cot-sofa-pet-hammock-bed-g-601099519061591.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Dream Nest Circle -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/cat-bed-round-pet-bed-for-small-dogs-cat-sleeping-beds-soft--mattress-removable-pet-mat-cat-sofa-for-outdoor-indoor-cat-g-601099519457473.html">
+                            <img src="images/详细/3.webp" alt="Dream Nest Circle" class="main-image" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product3.name">Dream Nest Circle</h4>
+                            <p class="recommendation" data-i18n="products.details.product3.description">Unlock your cat's 'art of relaxation'!</p>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$25.99</span>
+                            <span class="discount-price">$21.36</span>
+                            <a href="https://www.temu.com/cat-bed-round-pet-bed-for-small-dogs-cat-sleeping-beds-soft--mattress-removable-pet-mat-cat-sofa-for-outdoor-indoor-cat-g-601099519457473.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Stress Relief Scratch & Play House -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/2-in-1-cat-scratcher-cozy-bed--cardboard-interactive-playhouse-with-hanging-toys-comfortable-all-year-round-ideal-for-indoor-cats-leisure--house-g-601099868151601.html">
+                            <img src="images/详细/4.webp" alt="Stress Relief Scratch & Play House" class="main-image" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product4.name">Stress Relief Scratch & Play House</h4>
+                            <p class="recommendation" data-i18n="products.details.product4.description">Scratcher + Bed = Perfect Work-Play Balance!</p>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$19.99</span>
+                            <span class="discount-price">$16.66</span>
+                            <a href="https://www.temu.com/2-in-1-cat-scratcher-cozy-bed--cardboard-interactive-playhouse-with-hanging-toys-comfortable-all-year-round-ideal-for-indoor-cats-leisure--house-g-601099868151601.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Floating Cloud Island -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/hanging-cat-swing-bed-woven-rope-cat-hammock-basket-comfortable-pet-cradle-pet-swing-bed-for-indoor-cats-g-601099522344623.html">
+                            <img src="images/详细/5.webp" alt="Floating Cloud Island" class="main-image" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product5.name">Floating Cloud Island</h4>
+                            <p class="recommendation" data-i18n="products.details.product5.description">Not just a hammock, it's your cat's 'Inception' experience!</p>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$10.99</span>
+                            <span class="discount-price">$8.49</span>
+                            <a href="https://www.temu.com/hanging-cat-swing-bed-woven-rope-cat-hammock-basket-comfortable-pet-cradle-pet-swing-bed-for-indoor-cats-g-601099522344623.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Paw-Shaped Warm Nest -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/pet-dog-bed--paw-shape-warm-dog-bed-cushion-pet-sleep-mat-sofa-dog-house-g-601099515106340.html">
+                            <img src="images/详细/6.webp" alt="Paw-Shaped Warm Nest" class="main-image" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product6.name">Paw-Shaped Warm Nest</h4>
+                            <p class="recommendation" data-i18n="products.details.product6.description">Give your cat a 'five-star spa experience' on a paw pad!</p>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$14.99</span>
+                            <span class="discount-price">$11.82</span>
+                            <a href="https://www.temu.com/pet-dog-bed--paw-shape-warm-dog-bed-cushion-pet-sleep-mat-sofa-dog-house-g-601099515106340.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7: Cat Skyscraper -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/-cat-tree-54in-cat-tower-condo-with-2-condos-2-dangling-balls-3-scratching-posts-large-cat-house-for-for-kittens-cats-g-602989968344899.html">
+                            <img src="images/详细/7.webp" alt="Cat Skyscraper" class="main-image" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product7.name">Cat Skyscraper</h4>
+                            <p class="recommendation" data-i18n="products.details.product7.description">Let your cat experience the joy of being a 'vertical conqueror'!</p>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$52.99</span>
+                            <span class="discount-price">$44.61</span>
+                            <a href="https://www.temu.com/-cat-tree-54in-cat-tower-condo-with-2-condos-2-dangling-balls-3-scratching-posts-large-cat-house-for-for-kittens-cats-g-602989968344899.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8: Winter Healing Pod -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/1pc-pet-bed-house-for-cats-removable-and-washable-cat-house-winter-warm-cat-bed-soft-and-comfortable-puppy--g-601099536149393.html">
+                            <img src="images/详细/8.webp" alt="Winter Healing Pod" class="main-image" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product8.name">Winter Healing Pod</h4>
+                            <p class="recommendation" data-i18n="products.details.product8.description">Let your pet sleep in a breathing cloud villa!</p>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$10.99</span>
+                            <span class="discount-price">$8.39</span>
+                            <a href="https://www.temu.com/1pc-pet-bed-house-for-cats-removable-and-washable-cat-house-winter-warm-cat-bed-soft-and-comfortable-puppy--g-601099536149393.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9: Sunlight VIP Box -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/cat-window-perch-cat-hammock--window-mounted-cat-bed-g-601099516787632.html">
+                            <img src="images/详细/9.webp" alt="Sunlight VIP Box" class="main-image" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product9.name">Sunlight VIP Box</h4>
+                            <p class="recommendation" data-i18n="products.details.product9.description">Give your cat a 360° panoramic view!</p>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$9.99</span>
+                            <span class="discount-price">$8.07</span>
+                            <a href="https://www.temu.com/cat-window-perch-cat-hammock--window-mounted-cat-bed-g-601099516787632.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10: Winter Donut Fort -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/cat-cave-cat--bed-for-indoor-cats-detachable-washable-large-donut-cat-bed-winter-warm-cat-house-g-601099522403073.html">
+                            <img src="images/详细/10.webp" alt="Winter Donut Fort" class="main-image" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product10.name">Winter Donut Fort</h4>
+                            <p class="recommendation" data-i18n="products.details.product10.description">Let your cat experience the joy of being a warm custard bun!</p>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$16.99</span>
+                            <span class="discount-price">$13.99</span>
+                            <a href="https://www.temu.com/cat-cave-cat--bed-for-indoor-cats-detachable-washable-large-donut-cat-bed-winter-warm-cat-house-g-601099522403073.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transition Text Section -->
+    <section class="transition-text">
+        <div class="transition-content">
+            <h2 data-i18n="transition.title">Every Cat Bed Carries a Unique Love</h2>
+            <p data-i18n="transition.description">At Cat Nest Home, we understand that each cat has its unique personality and habits. From our curated collection to product details, every cat bed embodies our understanding and care for cats. Let's explore these thoughtfully designed cat beds to find the perfect cozy haven for your cat.</p>
+            <p class="transition-subtext" data-i18n="transition.subtext">Whether it's a lazy cat who loves to curl up or a playful little mischief-maker, here, they can all find their own special space. Every design detail stems from observing and understanding cats' living habits, all to provide them with the most thoughtful care.</p>
+            <div class="divider">
+                <span class="divider-icon">🐱</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <h2 data-i18n="products.details.title">Product Details</h2>
+        <div class="product-details-container">
+            <!-- Product 1: Feandrea Cat Castle -->
+            <div class="product-detail-item active" id="product-1">
+                <h3 data-i18n="products.details.product1.name">Feandrea Cat Castle</h3>
+                <div class="product-detail-grid">
+                    <div class="product-gallery">
+                        <div class="gallery-main">
+                            <img src="images/x-01.webp" alt="Feandrea Cat Castle" class="main-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="product-detail-info">
+                        <div class="product-price">
+                            <span class="current-price">$34.44</span>
+                            <span class="original-price">$44.99</span>
+                            <a href="https://www.temu.com/feandrea-cat-tree-66-1-inch-large-cat-tower-with-13-scratching-posts-2-perches-2-caves-basket-hammock-pompoms-multi-level-plush-cat-condo-for-indoor-cats-g-601099592240663.html" class="buy-now" target="_blank" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                        <div class="color-options">
+                            <h4 data-i18n="products.colorOptions.title">Available Colors</h4>
+                            <div class="color-swatches" data-product-id="1">
+                                <div class="color-option">
+                                    <span class="color-swatch active" style="background-color: #FFB6C1;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product1.colors.0">Jelly Pink</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #FFFAF0;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product1.colors.1">Cream White</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #D3D3D3;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product1.colors.2">Light Gray</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #696969;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product1.colors.3">Smoke Gray</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #DEB887;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product1.colors.4">Light Brown</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="size-reference">
+                            <h4 data-i18n="products.sizeReference.title">Size Reference</h4>
+                            <a href="#" class="view-size-chart" data-image="images/x-03.webp">
+                                <span class="icon">📏</span>
+                                <span data-i18n="products.sizeReference.viewChart">View Size Chart</span>
+                            </a>
+                        </div>
+                        <div class="suitable-for">
+                            <h4 data-i18n="products.suitableFor.title">Recommended For</h4>
+                            <p data-i18n="products.details.product1.features">Multi-cat households: Multi-level structure prevents territory disputes.
+                            Small apartment owners: Vertical space development, creates a cat 'CBD' in 1㎡.
+                            Furniture protection: 13 sisal posts for directed scratching, saves sofas and curtains.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2: Summer Cloud AC Room -->
+            <div class="product-detail-item">
+                <h3 data-i18n="products.details.product2.name">Summer Cloud AC Room</h3>
+                <div class="product-detail-grid">
+                    <div class="product-gallery">
+                        <div class="gallery-main">
+                            <img src="images/详细/2.webp" alt="Summer Cloud AC Room" class="main-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="product-detail-info">
+                        <div class="product-price">
+                            <span class="current-price">$8.09</span>
+                            <span class="original-price">$10.99</span>
+                            <a href="https://www.temu.com/cat-bed-pet-hammock-bed-cat-sleeping-bed-breathable-cooling-cot-sofa-pet-hammock-bed-g-601099519061591.html" class="buy-now" target="_blank" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                        <div class="color-options">
+                            <h4 data-i18n="products.colorOptions.title">Available Colors</h4>
+                            <div class="color-swatches" data-product-id="2">
+                                <div class="color-option">
+                                    <span class="color-swatch active" style="background-color: #FFFFFF;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product2.colors.0">Fresh White</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #FFE4B5;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product2.colors.1">Warm Yellow</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #98FF98;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product2.colors.2">Mint Green</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="size-reference">
+                            <h4 data-i18n="products.sizeReference.title">Size Reference</h4>
+                            <a href="#" class="view-size-chart" data-image="images/详细/2-2.webp">
+                                <span class="icon">📏</span>
+                                <span data-i18n="products.sizeReference.viewChart">View Size Chart</span>
+                            </a>
+                        </div>
+                        <div class="suitable-for">
+                            <h4 data-i18n="products.suitableFor.title">Recommended For</h4>
+                            <p data-i18n="products.details.product2.features">Southern region users: Prevents cat paw heat anxiety, eliminates heatstroke risk.
+                            Long-haired cat owners: Summer lifesaver for Ragdolls, Maine Coons, etc.
+                            Window view lovers: Hanging design + bird watching angle, fulfills cat's 'reality show' needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3: Dream Nest Circle -->
+            <div class="product-detail-item">
+                <h3 data-i18n="products.details.product3.name">Dream Nest Circle</h3>
+                <div class="product-detail-grid">
+                    <div class="product-gallery">
+                        <div class="gallery-main">
+                            <img src="images/详细/3.webp" alt="Dream Nest Circle" class="main-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="product-detail-info">
+                        <div class="product-price">
+                            <span class="current-price">$21.36</span>
+                            <span class="original-price">$25.99</span>
+                            <button class="buy-now" data-i18n="products.orderNow">Order Now</button>
+                        </div>
+                        <div class="color-options">
+                            <h4 data-i18n="products.colorOptions.title">Available Colors</h4>
+                            <div class="color-swatches" data-product-id="3">
+                                <div class="color-option">
+                                    <span class="color-swatch active" style="background-color: #2C2C2C;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product3.colors.0">Classic Black</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #9B7CB9;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product3.colors.1">Royal Purple</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #4A6FA5;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product3.colors.2">Deep Blue</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="size-reference">
+                            <h4 data-i18n="products.sizeReference.title">Size Reference</h4>
+                            <a href="#" class="view-size-chart" data-image="images/详细/3-3.webp">
+                                <span class="icon">📏</span>
+                                <span data-i18n="products.sizeReference.viewChart">View Size Chart</span>
+                            </a>
+                        </div>
+                        <div class="suitable-for">
+                            <h4 data-i18n="products.suitableFor.title">Recommended For</h4>
+                            <p data-i18n="products.details.product3.features">Camping enthusiasts: Portable folding design, perfect for outdoor picnics.
+                            Senior cat parents: Low entrance + cushion design, caring for joint health.
+                            Cleanliness-focused owners: Detachable lining, one-click washing without odor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4: Stress Relief Scratch & Play House -->
+            <div class="product-detail-item">
+                <h3 data-i18n="products.details.product4.name">Stress Relief Scratch & Play House</h3>
+                <div class="product-detail-grid">
+                    <div class="product-gallery">
+                        <div class="gallery-main">
+                            <img src="images/详细/4.webp" alt="Stress Relief Scratch & Play House" class="main-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="product-detail-info">
+                        <div class="product-price">
+                            <span class="current-price">$16.66</span>
+                            <span class="original-price">$19.99</span>
+                            <button class="buy-now" data-i18n="products.orderNow">Order Now</button>
+                        </div>
+                        <div class="color-options">
+                            <h4 data-i18n="products.colorOptions.title">Available Colors</h4>
+                            <div class="color-swatches" data-product-id="4">
+                                <div class="color-option">
+                                    <span class="color-swatch active" style="background-color: #FFA500;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product4.colors.0">Vibrant Orange</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #87CEEB;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product4.colors.1">Sky Blue</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #90EE90;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product4.colors.2">Grass Green</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="size-reference">
+                            <h4 data-i18n="products.sizeReference.title">Size Reference</h4>
+                            <a href="#" class="view-size-chart" data-image="images/详细/4-4.webp">
+                                <span class="icon">📏</span>
+                                <span data-i18n="products.sizeReference.viewChart">View Size Chart</span>
+                            </a>
+                        </div>
+                        <div class="suitable-for">
+                            <h4 data-i18n="products.suitableFor.title">Recommended For</h4>
+                            <p data-i18n="products.details.product4.features">Renting students: No drilling required, no wall damage when moving.
+                            New cat owners: One-click assembly, thoughtful user guide.
+                            Extreme cold region users: Double-layer warmth, withstands severe cold.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5: Floating Cloud Island -->
+            <div class="product-detail-item">
+                <h3 data-i18n="products.details.product5.name">Floating Cloud Island</h3>
+                <div class="product-detail-grid">
+                    <div class="product-gallery">
+                        <div class="gallery-main">
+                            <img src="images/详细/5.webp" alt="Floating Cloud Island" class="main-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="product-detail-info">
+                        <div class="product-price">
+                            <span class="current-price">$8.49</span>
+                            <span class="original-price">$10.99</span>
+                            <button class="buy-now" data-i18n="products.orderNow">Order Now</button>
+                        </div>
+                        <div class="color-options">
+                            <h4 data-i18n="products.colorOptions.title">Available Colors</h4>
+                            <div class="color-swatches" data-product-id="5">
+                                <div class="color-option">
+                                    <span class="color-swatch active" style="background-color: #8B4513;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product5.colors.0">Classic Brown</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #DAA520;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product5.colors.1">Royal Gold</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #F5F5F5;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product5.colors.2">Elegant White</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="size-reference">
+                            <h4 data-i18n="products.sizeReference.title">Size Reference</h4>
+                            <a href="#" class="view-size-chart" data-image="images/详细/5-5.webp">
+                                <span class="icon">📏</span>
+                                <span data-i18n="products.sizeReference.viewChart">View Size Chart</span>
+                            </a>
+                        </div>
+                        <div class="suitable-for">
+                            <h4 data-i18n="products.suitableFor.title">Recommended For</h4>
+                            <p data-i18n="products.details.product5.features">Large cat owners: Reinforced weight bearing, suitable for Maine Coon and other large breeds.
+                            Multi-cat households: Multi-level space, prevents territory disputes.
+                            Vertical space developers: Makes full use of wall height, saves floor space.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6: Paw-Shaped Warm Nest -->
+            <div class="product-detail-item">
+                <h3 data-i18n="products.details.product6.name">Paw-Shaped Warm Nest</h3>
+                <div class="product-detail-grid">
+                    <div class="product-gallery">
+                        <div class="gallery-main">
+                            <img src="images/详细/6.webp" alt="Paw-Shaped Warm Nest" class="main-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="product-detail-info">
+                        <div class="product-price">
+                            <span class="current-price">$11.82</span>
+                            <span class="original-price">$14.99</span>
+                            <button class="buy-now" data-i18n="products.orderNow">Order Now</button>
+                        </div>
+                        <div class="color-options">
+                            <h4 data-i18n="products.colorOptions.title">Available Colors</h4>
+                            <div class="color-swatches" data-product-id="6">
+                                <div class="color-option">
+                                    <span class="color-swatch active" style="background-color: #FFC0CB;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product6.colors.0">Pink</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #F5F5DC;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product6.colors.1">Beige</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #D3D3D3;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product6.colors.2">Light Gray</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="size-reference">
+                            <h4 data-i18n="products.sizeReference.title">Size Reference</h4>
+                            <a href="#" class="view-size-chart" data-image="images/详细/6-6.webp">
+                                <span class="icon">📏</span>
+                                <span data-i18n="products.sizeReference.viewChart">View Size Chart</span>
+                            </a>
+                        </div>
+                        <div class="suitable-for">
+                            <h4 data-i18n="products.suitableFor.title">Recommended For</h4>
+                            <p data-i18n="products.details.product6.features">Northern cold regions: Constant heating, warm through winter.
+                            Small dogs/senior cats: Low entrance, protects joints.
+                            Easy-clean enthusiasts: Machine washable fabric, effortless maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7: Cat Skyscraper -->
+            <div class="product-detail-item">
+                <h3 data-i18n="products.details.product7.name">Cat Skyscraper</h3>
+                <div class="product-detail-grid">
+                    <div class="product-gallery">
+                        <div class="gallery-main">
+                            <img src="images/详细/7.webp" alt="Cat Skyscraper" class="main-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="product-detail-info">
+                        <div class="product-price">
+                            <span class="current-price">$44.61</span>
+                            <span class="original-price">$52.99</span>
+                            <button class="buy-now" data-i18n="products.orderNow">Order Now</button>
+                        </div>
+                        <div class="color-options">
+                            <h4 data-i18n="products.colorOptions.title">Available Colors</h4>
+                            <div class="color-swatches" data-product-id="7">
+                                <div class="color-option">
+                                    <span class="color-swatch active" style="background-color: #C0C0C0;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product7.colors.0">Space Silver</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #B76E79;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product7.colors.1">Rose Gold</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #4169E1;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product7.colors.2">Starry Blue</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="size-reference">
+                            <h4 data-i18n="products.sizeReference.title">Size Reference</h4>
+                            <a href="#" class="view-size-chart" data-image="images/详细/7-7.webp">
+                                <span class="icon">📏</span>
+                                <span data-i18n="products.sizeReference.viewChart">View Size Chart</span>
+                            </a>
+                        </div>
+                        <div class="suitable-for">
+                            <h4 data-i18n="products.suitableFor.title">Recommended For</h4>
+                            <p data-i18n="products.details.product7.features">Suitable for active cats, multi-level design satisfies climbing needs. Perfect for cats under 12kg, combines rest, play, and viewing functions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8: Winter Healing Pod -->
+            <div class="product-detail-item">
+                <h3 data-i18n="products.details.product8.name">Winter Healing Pod</h3>
+                <div class="product-detail-grid">
+                    <div class="product-gallery">
+                        <div class="gallery-main">
+                            <img src="images/详细/8.webp" alt="Winter Healing Pod" class="main-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="product-detail-info">
+                        <div class="product-price">
+                            <span class="current-price">$8.39</span>
+                            <span class="original-price">$10.99</span>
+                            <button class="buy-now" data-i18n="products.orderNow">Order Now</button>
+                        </div>
+                        <div class="color-options">
+                            <h4 data-i18n="products.colorOptions.title">Available Colors</h4>
+                            <div class="color-swatches" data-product-id="8">
+                                <div class="color-option">
+                                    <span class="color-swatch active" style="background-color: #FFE4B5;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product8.colors.0">Warm Yellow</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #98FF98;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product8.colors.1">Mint Green</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #FFFFFF;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product8.colors.2">Fresh White</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="size-reference">
+                            <h4 data-i18n="products.sizeReference.title">Size Reference</h4>
+                            <a href="#" class="view-size-chart" data-image="images/详细/8-8.webp">
+                                <span class="icon">📏</span>
+                                <span data-i18n="products.sizeReference.viewChart">View Size Chart</span>
+                            </a>
+                        </div>
+                        <div class="suitable-for">
+                            <h4 data-i18n="products.suitableFor.title">Recommended For</h4>
+                            <p data-i18n="products.details.product8.features">New cat owners: One-click assembly, thoughtful user guide.
+                            Extreme cold region users: Double-layer warmth, withstands severe cold.
+                            Easy-clean enthusiasts: Machine washable fabric, effortless maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 9: Sunlight VIP Box -->
+            <div class="product-detail-item">
+                <h3 data-i18n="products.details.product9.name">Sunlight VIP Box</h3>
+                <div class="product-detail-grid">
+                    <div class="product-gallery">
+                        <div class="gallery-main">
+                            <img src="images/详细/9.webp" alt="Sunlight VIP Box" class="main-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="product-detail-info">
+                        <div class="product-price">
+                            <span class="current-price">$8.07</span>
+                            <span class="original-price">$9.99</span>
+                            <button class="buy-now" data-i18n="products.orderNow">Order Now</button>
+                        </div>
+                        <div class="color-options">
+                            <h4 data-i18n="products.colorOptions.title">Available Colors</h4>
+                            <div class="color-swatches" data-product-id="9">
+                                <div class="color-option">
+                                    <span class="color-swatch active" style="background-color: #87CEEB;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product9.colors.0">Sky Blue</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #90EE90;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product9.colors.1">Grass Green</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #FFA500;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product9.colors.2">Vibrant Orange</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="size-reference">
+                            <h4 data-i18n="products.sizeReference.title">Size Reference</h4>
+                            <a href="#" class="view-size-chart" data-image="images/详细/9-9.webp">
+                                <span class="icon">📏</span>
+                                <span data-i18n="products.sizeReference.viewChart">View Size Chart</span>
+                            </a>
+                        </div>
+                        <div class="suitable-for">
+                            <h4 data-i18n="products.suitableFor.title">Recommended For</h4>
+                            <p data-i18n="products.details.product9.features">Bird-watching cats: Large viewing window, enjoy bird performances.
+                            Renters: Tool-free installation, leaves no marks.
+                            Sunbathing enthusiasts: Transparent design, enjoy sunbathing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 10: Winter Donut Fort -->
+            <div class="product-detail-item">
+                <h3 data-i18n="products.details.product10.name">Winter Donut Fort</h3>
+                <div class="product-detail-grid">
+                    <div class="product-gallery">
+                        <div class="gallery-main">
+                            <img src="images/详细/10.webp" alt="Winter Donut Fort" class="main-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="product-detail-info">
+                        <div class="product-price">
+                            <span class="current-price">$13.99</span>
+                            <span class="original-price">$16.99</span>
+                            <button class="buy-now" data-i18n="products.orderNow">Order Now</button>
+                        </div>
+                        <div class="color-options">
+                            <h4 data-i18n="products.colorOptions.title">Available Colors</h4>
+                            <div class="color-swatches" data-product-id="10">
+                                <div class="color-option">
+                                    <span class="color-swatch active" style="background-color: #FFE4E1;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product10.colors.0">Soft Pink</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #FFC0CB;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product10.colors.1">Pink</span>
+                                </div>
+                                <div class="color-option">
+                                    <span class="color-swatch" style="background-color: #F5F5DC;"></span>
+                                    <span class="color-name" data-i18n="products.colorOptions.product10.colors.2">Beige</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="size-reference">
+                            <h4 data-i18n="products.sizeReference.title">Size Reference</h4>
+                            <a href="#" class="view-size-chart" data-image="images/详细/10-10.webp">
+                                <span class="icon">📏</span>
+                                <span data-i18n="products.sizeReference.viewChart">View Size Chart</span>
+                            </a>
+                        </div>
+                        <div class="suitable-for">
+                            <h4 data-i18n="products.suitableFor.title">Recommended For</h4>
+                            <p data-i18n="products.details.product10.features">Shy and introverted cats: Enclosed design provides security.
+                            Multi-cat homes: Donut shape perfect for cat cuddling.
+                            Cute decor collectors: Adorable shape adds fun to home decor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Review Transition Section -->
+    <section class="review-transition">
+        <div class="review-transition-content">
+            <h2 data-i18n="reviews.title">Listening to Every Owner's Voice</h2>
+            <div class="review-stats">
+                <div class="stat-item">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label" data-i18n="reviews.stats.satisfaction">Owner Satisfaction</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10000+</span>
+                    <span class="stat-label" data-i18n="reviews.stats.happyCats">Happy Cats</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label" data-i18n="reviews.stats.rating">Average Rating</span>
+                </div>
+            </div>
+            <div class="review-icon">😺</div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="testimonials">
+        <h2 data-i18n="reviews.title">Customer Reviews</h2>
+        <div class="testimonials-container">
+            <div class="testimonials-track">
+                <!-- 第一页评价 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-grid">
+                        <!-- Reviews will be dynamically generated by JavaScript -->
+                    </div>
+                </div>
+                <!-- More review pages will be dynamically generated -->
+            </div>
+            <div class="testimonial-navigation">
+                <div class="testimonial-dots">
+                    <!-- Navigation dots will be dynamically generated -->
+                </div>
+                <div class="testimonial-counter">
+                    <span class="current-page">1</span>
+                    <span>/</span>
+                    <span class="total-pages">20</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="footer.about.title">About Us</h3>
+                <p data-i18n="footer.about.description">Cat Nest Home is dedicated to providing every cat with a cozy and comfortable resting space.</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.quickLinks.title">Quick Links</h3>
+                <ul>
+                    <li><a href="#featured-products" data-i18n="footer.quickLinks.allProducts">All Products</a></li>
+                    <li><a href="privacy.html" data-i18n="footer.quickLinks.privacy">Privacy Policy</a></li>
+                    <li><a href="about.html" data-i18n="footer.quickLinks.aboutUs">About Us</a></li>
+                    <li><a href="contact.html" data-i18n="footer.quickLinks.contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.contact.title">Contact Information</h3>
+                <ul>
+                    <li data-i18n="footer.contact.phone">Customer Service: 400-888-8888</li>
+                    <li data-i18n="footer.contact.hours">Business Hours: 9:00-21:00</li>
+                    <li data-i18n="footer.contact.email">Email: service@catnest.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">© 2024 Cat Nest Home. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Size Chart Modal -->
+    <div class="size-chart-modal" id="sizeChartModal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-image-container">
+                <img src="" alt="Size Reference Chart" id="modalImage">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 初始化语言
+        function initializeLanguageSwitch() {
+            // 获取语言切换按钮
+            const langButton = document.querySelector('.lang-btn');
+            
+            // 为按钮添加点击事件
+            if (langButton) {
+                langButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    i18n.switchLanguage('en');
+                });
+            }
+            
+            // 初始化语言
+            i18n.initLanguage();
+        }
+
+        // 确保在DOM加载完成后初始化
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeLanguageSwitch);
+        } else {
+            initializeLanguageSwitch();
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

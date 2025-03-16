@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Cat Beds - Cat Nest Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 1.5rem;
+        }
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .product-price {
+            font-size: 1.5rem;
+            color: #ff6b6b;
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+        .product-description {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        .buy-button {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: 100%;
+        }
+        .buy-button:hover {
+            background: #ff5252;
+        }
+        .page-title {
+            text-align: center;
+            padding: 3rem 0;
+            background: #f8f9fa;
+        }
+        .page-title h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .page-title p {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <p data-i18n="announcement">🎉 Limited Time | Free Shipping on Orders Over $299</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="/">
+                    <svg width="150" height="40" viewBox="0 0 150 40">
+                        <text x="0" y="30" font-family="'Noto Sans SC'" font-size="24" fill="#333">Cat Nest Home</text>
+                        <path d="M140,15 Q145,5 150,15" stroke="#FF6B6B" fill="none" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav.home">Back to Home</a></li>
+                <li><a href="#privacy" data-i18n="nav.privacy">Privacy Policy</a></li>
+                <li><a href="#about" data-i18n="nav.aboutUs">About Us</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                <li class="language-switch">
+                    <button onclick="i18n.switchLanguage('en')" class="lang-btn">EN</button>
+                    <button onclick="i18n.switchLanguage('zh')" class="lang-btn">中</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <h1 data-i18n="shop.title">Featured Cat Beds</h1>
+        <p data-i18n="shop.subtitle">Choose the Perfect Cozy Haven for Your Cat</p>
+    </section>
+
+    <!-- Product Display Section -->
+    <section class="featured-products">
+        <div class="product-collection-card">
+            <div class="product-collection-grid">
+                <!-- Product 1: Feandrea Cat Castle -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/feandrea-cat-tree-66-1-inch-large-cat-tower-with-13-scratching-posts-2-perches-2-caves-basket-hammock-pompoms-multi-level-plush-cat-condo-for-indoor-cats-g-601099592240663.html">
+                            <img src="images/1.webp" alt="Feandrea Cat Castle" class="main-image">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product1.name">Feandrea Cat Castle</h4>
+                            <p class="recommendation" data-i18n="products.details.product1.description">Let your cat enjoy a 'five-star climbing life'!</p>
+                            <div class="product-features">
+                                <span class="feature-tag" data-i18n="products.features.product1.0">Multi-level Space</span>
+                                <span class="feature-tag" data-i18n="products.features.product1.1">Sisal Posts</span>
+                                <span class="feature-tag" data-i18n="products.features.product1.2">Climbable</span>
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$44.99</span>
+                            <span class="discount-price">$34.44</span>
+                            <a href="https://www.temu.com/feandrea-cat-tree-66-1-inch-large-cat-tower-with-13-scratching-posts-2-perches-2-caves-basket-hammock-pompoms-multi-level-plush-cat-condo-for-indoor-cats-g-601099592240663.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Summer Cloud AC Room -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/cat-bed-pet-hammock-bed-cat-sleeping-bed-breathable-cooling-cot-sofa-pet-hammock-bed-g-601099519061591.html">
+                            <img src="images/2.webp" alt="Summer Cloud AC Room" class="main-image">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product2.name">Summer Cloud AC Room</h4>
+                            <p class="recommendation" data-i18n="products.details.product2.description">Cat's 'summer resort'</p>
+                            <div class="product-features">
+                                <span class="feature-tag" data-i18n="products.features.product2.0">Breathable Cooling</span>
+                                <span class="feature-tag" data-i18n="products.features.product2.1">Hammock Design</span>
+                                <span class="feature-tag" data-i18n="products.features.product2.2">Easy Install</span>
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$10.99</span>
+                            <span class="discount-price">$8.09</span>
+                            <a href="https://www.temu.com/cat-bed-pet-hammock-bed-cat-sleeping-bed-breathable-cooling-cot-sofa-pet-hammock-bed-g-601099519061591.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Round Dream Nest -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/cat-bed-round-pet-bed-for-small-dogs-cat-sleeping-beds-soft--mattress-removable-pet-mat-cat-sofa-for-outdoor-indoor-cat-g-601099519457473.html">
+                            <img src="images/3.webp" alt="Round Dream Nest" class="main-image">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product3.name">Round Dream Nest</h4>
+                            <p class="recommendation" data-i18n="products.details.product3.description">Unlock your cat's 'flat art life'!</p>
+                            <div class="product-features">
+                                <span class="feature-tag" data-i18n="products.features.product3.0">Portable Design</span>
+                                <span class="feature-tag" data-i18n="products.features.product3.1">Thickened Bottom for Warmth</span>
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$24.99</span>
+                            <span class="discount-price">$19.99</span>
+                            <a href="https://www.temu.com/cat-bed-round-pet-bed-for-small-dogs-cat-sleeping-beds-soft--mattress-removable-pet-mat-cat-sofa-for-outdoor-indoor-cat-g-601099519457473.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Stress Relief Karaoke Room -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/2-in-1-cat-scratcher-cozy-bed--cardboard-interactive-playhouse-with-hanging-toys-comfortable-all-year-round-ideal-for-indoor-cats-leisure--house-g-601099868151601.html">
+                            <img src="images/4.webp" alt="Stress Relief K Karaoke Room" class="main-image">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product4.name">Stress Relief K Karaoke Room</h4>
+                            <p class="recommendation" data-i18n="products.details.product4.description">Cat Scratch + Bed = Cat World 'Work-Play Balance Heaven'!</p>
+                            <div class="product-features">
+                                <span class="feature-tag" data-i18n="products.features.product4.0">Multi-functional</span>
+                                <span class="feature-tag" data-i18n="products.features.product4.1">Includes Scratching Board and Toy</span>
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$34.99</span>
+                            <span class="discount-price">$29.99</span>
+                            <a href="https://www.temu.com/2-in-1-cat-scratcher-cozy-bed--cardboard-interactive-playhouse-with-hanging-toys-comfortable-all-year-round-ideal-for-indoor-cats-leisure--house-g-601099868151601.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Floating Island -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/hanging-cat-swing-bed-woven-rope-cat-hammock-basket-comfortable-pet-cradle-pet-swing-bed-for-indoor-cats-g-601099522344623.html">
+                            <img src="images/5.webp" alt="Floating Island" class="main-image">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product5.name">Floating Island</h4>
+                            <p class="recommendation" data-i18n="products.details.product5.description">This is not a hammock, it's a cat's gyroscope in Meow World's 'Inception'!</p>
+                            <div class="product-features">
+                                <span class="feature-tag" data-i18n="products.features.product5.0">High Suspension</span>
+                                <span class="feature-tag" data-i18n="products.features.product5.1">Unique Viewing Experience</span>
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$44.99</span>
+                            <span class="discount-price">$39.99</span>
+                            <a href="https://www.temu.com/hanging-cat-swing-bed-woven-rope-cat-hammock-basket-comfortable-pet-cradle-pet-swing-bed-for-indoor-cats-g-601099522344623.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Paw Shape Warm Nest -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/pet-dog-bed--paw-shape-warm-dog-bed-cushion-pet-sleep-mat-sofa-dog-house-g-601099515106340.html">
+                            <img src="images/6.webp" alt="Paw Shape Warm Nest" class="main-image">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product6.name">Paw Shape Warm Nest</h4>
+                            <p class="recommendation" data-i18n="products.details.product6.description">Let your cat experience a 'five-star hot spring resort on the paw pad'!</p>
+                            <div class="product-features">
+                                <span class="feature-tag" data-i18n="products.features.product6.0">Heatable</span>
+                                <span class="feature-tag" data-i18n="products.features.product6.1">Cute Shape</span>
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$39.99</span>
+                            <span class="discount-price">$34.99</span>
+                            <a href="https://www.temu.com/pet-dog-bed--paw-shape-warm-dog-bed-cushion-pet-sleep-mat-sofa-dog-house-g-601099515106340.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7: Cat World Skyscraper -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/-cat-tree-54in-cat-tower-condo-with-2-condos-2-dangling-balls-3-scratching-posts-large-cat-house-for-for-kittens-cats-g-602989968344899.html">
+                            <img src="images/7.webp" alt="Cat World Skyscraper" class="main-image">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product7.name">Cat World Skyscraper</h4>
+                            <p class="recommendation" data-i18n="products.details.product7.description">Let your cat experience the joy of being a 'vertical conqueror'!</p>
+                            <div class="product-features">
+                                <span class="feature-tag" data-i18n="products.features.product7.0">Super Large</span>
+                                <span class="feature-tag" data-i18n="products.features.product7.1">Multi-level Design</span>
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$79.99</span>
+                            <span class="discount-price">$69.99</span>
+                            <a href="https://www.temu.com/-cat-tree-54in-cat-tower-condo-with-2-condos-2-dangling-balls-3-scratching-posts-large-cat-house-for-for-kittens-cats-g-602989968344899.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8: Winter Comfort Cabin -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/1pc-pet-bed-house-for-cats-removable-and-washable-cat-house-winter-warm-cat-bed-soft-and-comfortable-puppy--g-601099536149393.html">
+                            <img src="images/8.webp" alt="Winter Comfort Cabin" class="main-image">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product8.name">Winter Comfort Cabin</h4>
+                            <p class="recommendation" data-i18n="products.details.product8.description">Let your pet sleep in a cloud-like villa that breathes!</p>
+                            <div class="product-features">
+                                <span class="feature-tag" data-i18n="products.features.product8.0">Double Layer Warm Design</span>
+                                <span class="feature-tag" data-i18n="products.features.product8.1">Easy Clean</span>
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$29.99</span>
+                            <span class="discount-price">$24.99</span>
+                            <a href="https://www.temu.com/1pc-pet-bed-house-for-cats-removable-and-washable-cat-house-winter-warm-cat-bed-soft-and-comfortable-puppy--g-601099536149393.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9: Hanging Sunlight VIP Suite -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/cat-window-perch-cat-hammock--window-mounted-cat-bed-g-601099516787632.html">
+                            <img src="images/9.webp" alt="Hanging Sunlight VIP Suite" class="main-image">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product9.name">Hanging Sunlight VIP Suite</h4>
+                            <p class="recommendation" data-i18n="products.details.product9.description">Let your cat earn 360° panoramic traffic!</p>
+                            <div class="product-features">
+                                <span class="feature-tag" data-i18n="products.features.product9.0">Large Window Design</span>
+                                <span class="feature-tag" data-i18n="products.features.product9.1">No Tool Installation Required</span>
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$37.99</span>
+                            <span class="discount-price">$32.99</span>
+                            <a href="https://www.temu.com/cat-window-perch-cat-hammock--window-mounted-cat-bed-g-601099516787632.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10: Winter Sweet Donut Fortress -->
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <a href="https://www.temu.com/cat-cave-cat--bed-for-indoor-cats-detachable-washable-large-donut-cat-bed-winter-warm-cat-house-g-601099522403073.html">
+                            <img src="images/10.webp" alt="Winter Sweet Donut Fortress" class="main-image">
+                        </a>
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-info-left">
+                            <h4 data-i18n="products.details.product10.name">Winter Sweet Donut Fortress</h4>
+                            <p class="recommendation" data-i18n="products.details.product10.description">Let your cat experience the joy of being 360° spoiled into a flowery cream bun!</p>
+                            <div class="product-features">
+                                <span class="feature-tag" data-i18n="products.features.product10.0">Sweet Donut Shape</span>
+                                <span class="feature-tag" data-i18n="products.features.product10.1">Closed Design</span>
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$27.99</span>
+                            <span class="discount-price">$22.99</span>
+                            <a href="https://www.temu.com/cat-cave-cat--bed-for-indoor-cats-detachable-washable-large-donut-cat-bed-winter-warm-cat-house-g-601099522403073.html" class="order-button" data-i18n="products.orderNow">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="footer.aboutUs">About Us</h3>
+                <p>Cat Nest Home is committed to providing your cat with a warm and comfortable rest space, allowing them to enjoy their happy moments.</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" data-i18n="footer.home">Back to Home</a></li>
+                    <li><a href="#privacy" data-i18n="footer.privacy">Privacy Policy</a></li>
+                    <li><a href="#about" data-i18n="footer.aboutUs">About Us</a></li>
+                    <li><a href="#contact" data-i18n="footer.contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.contactInfo">Contact Information</h3>
+                <ul>
+                    <li>Customer Service Phone: 400-888-8888</li>
+                    <li>Business Hours: 9:00-21:00</li>
+                    <li>Email: service@catnest.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cat Nest Home. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script>
+        // Initialize multilingual support
+        document.addEventListener('DOMContentLoaded', () => {
+            i18n.initLanguage();
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
